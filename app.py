@@ -4,8 +4,8 @@ import streamlit as st
 import pickle
 import requests
 
-movies_df = pickle.load(open('movies.pkl','rb'))
-similar = pickle.load(open('similar.pkl','rb'))
+movies_df = pickle.load(open('./movies.pkl','rb'))
+similar = pickle.load(open('./similar.pkl','rb'))
 
 movies_titles = movies_df['title'].values
 
